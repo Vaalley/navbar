@@ -18,13 +18,15 @@ body {
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
-h2 {
+.nav-header,
+.nav-header h2 {
 	margin-right: auto;
 	font-size: 1.5rem;
 	font-weight: 500;
 }
 
-ul {
+.nav-shortcuts,
+.nav-shortcuts ul {
 	display: flex;
 	gap: 1rem;
 	margin-right: auto;
@@ -36,21 +38,33 @@ a {
 	font-weight: 500;
 }
 
-.icons-container {
+.nav-icons {
 	display: flex;
 	gap: 1rem;
+}
+
+.nav-shortcuts-mobile {
+	display: none;
+	font-size: 1.5rem;
+	font-weight: 500;
+	margin-left: 3rem;
+	margin-top: 2rem;
 }
 
 .menu {
 	display: none;
 }
 
+.show {
+	display: block;
+}
+
 @media screen and (max-width: 768px) {
-	ul {
+	.nav-shortcuts {
 		display: none;
 	}
 
-	.icons-container {
+	.nav-icons {
 		display: none;
 	}
 
